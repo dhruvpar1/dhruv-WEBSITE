@@ -1,0 +1,85 @@
+.shimmer {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 0 auto;
+    display: inline;
+    margin-bottom: 0;
+  }
+  .shimmer {
+    text-align: center;
+    color: rgba(255,255,255,0.1);
+    background: -webkit-gradient(linear, left top, right top, from(rgb(236, 230, 230)), to(rgb(241, 236, 236)), color-stop(0.5, rgb(12, 12, 12)));
+    background: -moz-gradient(linear, left top, right bottom, from(rgb(255, 253, 253)), to(rgb(248, 247, 247)), color-stop(0.5, rgb(20, 20, 20)));
+    background: gradient(linear, left bottom, right bottom, from(rgb(255, 249, 249)), to(rgb(243, 237, 237)), color-stop(0.5, rgb(0, 0, 0)));
+    -webkit-background-size: 125px 100%;
+    -moz-background-size: 125px 100%;
+    background-size: 6px 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+ 
+    animation-name: shimmer;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #222;
+  }
+  @-moz-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @-webkit-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @-o-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(63, 55, 55);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
