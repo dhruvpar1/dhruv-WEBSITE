@@ -1,0 +1,135 @@
+*{
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+  }
+  .main-container {
+    border-radius: 20px;
+    height: 50vh;
+    color: black;
+    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  p{
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  #new-user{
+   text-align: right;
+   padding: 3px;
+   color : blue;
+   cursor: pointer;
+  }
+  #skip{
+   text-align: right;
+   padding: 3px;
+   cursor: pointer;
+   color: red;
+  }
+  #character1{
+    position: absolute;
+    right: 4cm;
+    border-radius: 100%;
+    animation-name: example1;
+    height: 50vh;
+    animation-duration: 4s;
+  
+    top: 4cm;
+  }
+  #character2{
+    position: absolute;
+      right: 11cm;
+      border-radius: 100%;
+      animation-name: example2;
+      height: 50vh;
+      animation-duration: 4s;
+      top: 16cm;
+  }
+  @keyframes example1 {
+    0%  { right: 0em;   top: 4cm;}
+    
+    100% { right:4cm; top:4cm;}
+    }
+  @keyframes example2 {
+    0%  { right: 0em;   top: 16cm;}
+    
+    100% { right: 11cm; top: 16cm;}
+    }
+    #but{
+      height: 20px;
+      width: 50px;
+      border-radius: 5px;
+      position: absolute;
+      left: 8cm;
+      top: 4cm;
+      color: white;
+      background-color:black;
+      z-index: -1;
+  
+    }
+  #new-window{
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    
+  }
+  .popup{
+    width: 120px;
+        height: 80px;
+        background: red;
+        position: relative;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        position: absolute;
+        right:3cm ;
+        top: 4cm;
+        display: none;
+  
+  }
+  #div1,#div4{
+    width: 170px;
+      height: 93px;
+      background: red;
+      color: white;
+      text-align: center;
+      padding-top: 52px;
+      position: absolute;
+      top: 3cm;
+      left: 16cm;
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  
+  }
+  #div6{
+    width: 170px;
+      height: 93px;
+      background: red;
+      color: white;
+      text-align: center;
+      padding-top: 52px;
+      position: absolute;
+      top: 3cm;
+      left: 10cm;
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  
+  }
+  
+  
+      
+  #bt2{
+    position: absolute;
+    top: 9cm;
+        left: 19cm;
+  
+  }
+      
+  #bt3{
+    position: absolute;
+    top: 9cm;
+        left: 19cm;
+  
+  }

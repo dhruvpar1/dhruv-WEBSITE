@@ -40,7 +40,7 @@ a{
     transform: translateZ(0);
   background:#1B2030 url(asthetic_Bg_Image1.jpg) 50% 0 no-repeat;
   background-size:100%;
-  scale(1.0, 1.0);
+  transform:  scale(1.0, 1.0);
   background-attachment:fixed;
   animation: grow 360s  linear 10ms infinite;
   transition:all 0.4s ease-in-out;
